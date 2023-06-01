@@ -4,7 +4,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import { Home, NotFoundPage } from './Pages'
-import { Layout, Schedule } from './Components';
+import { Layout } from './Components';
 
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
-        {/* <Route path='schedule' element={<Schedule />} /> */}
       </Route>
       <Route path='*' element={<NotFoundPage />} />
 
